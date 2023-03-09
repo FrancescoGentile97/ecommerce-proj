@@ -1,15 +1,14 @@
 <template>
-    <div>
+    <footer class="bg-primary">
         <h1>sono un footer</h1>
-
-    </div>
+    </footer>
 </template>
 
 <script>
-import {store} from '../store';
+import { store } from '../store';
 export default {
-    data(){
-        return{
+    data() {
+        return {
             store,
         }
     }
@@ -17,6 +16,4 @@ export default {
 
 </script>
 
-<style>
-
-</style>
+<style></style>
