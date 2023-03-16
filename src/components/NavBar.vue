@@ -1,5 +1,5 @@
 <template>
-    <section class="position-sticky my-index">
+    <section class="position-sticky my-index mb-5">
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img></a>

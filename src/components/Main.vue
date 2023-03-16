@@ -1,6 +1,6 @@
 <template>
     <section style="width:1080px">
-        <div class="container">
+        <div class="container mt-5">
             <!-- link del catalogo -->
             <div class="my-primary">
                 <h3>Scarpe Uomo</h3>
@@ -93,32 +93,42 @@
         </div>
         <!-- fine lista categorie -->
 
-        <!-- price list -->
-        <ol class="list-group list-group-numbered">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                    <div class="fw-bold">
-                        <h4>PRICE</h4>
-                    </div>
+        <!-- price range bar -->
+        <div id="form-wrapper">
+            <form action="/p/quote.php" method="GET">
+                <h1 id="form-title">Seleziona il prezzo</h1>
+                <div id="debt-amount-slider">
+                    <input type="radio" name="debt-amount" id="1" value="1" required>
+                    <label for="1" data-debt-amount="< $25"></label>
+                    <input type="radio" name="debt-amount" id="2" value="2" required>
+                    <label for="2" data-debt-amount="$25-50"></label>
+                    <input type="radio" name="debt-amount" id="3" value="3" required>
+                    <label for="3" data-debt-amount="$50-100"></label>
+                    <input type="radio" name="debt-amount" id="4" value="4" required>
+                    <label for="4" data-debt-amount="$100-300"></label>
+                    <input type="radio" name="debt-amount" id="5" value="5" required>
+                    <label for="5" data-debt-amount="$300+ >"></label>
+                    <div id="debt-amount-pos"></div>
                 </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </div>
-                <span class="badge bg-primary rounded-pill">14</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                    <div class="fw-bold">Subheading</div>
-                    Content for list item
-                </div>
-                <span class="badge bg-primary rounded-pill">14</span>
-            </li>
-        </ol>
-        <!-- fine price list -->
+            </form>
+            <button type="submit">Acquista Ora</button>
+        </div>
 
+        <!-- fine price range bar -->
+
+        <!-- brand list -->
+        <div>
+            <h4>BRAND</h4>
+        </div>
+        <ul class="list-group">
+            <li v-for="brand in brands" :key="brand.title" class="list-group-item">
+                {{ brand.title }}
+                <span>
+                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                </span>
+            </li>
+        </ul>
+        <!-- fine brand list -->
 
         <!-- fine sidebar -->
 
@@ -136,12 +146,30 @@ export default {
     data() {
         return {
             store,
+            brands: [
+                {
+                    title: "Lifestyle",
+                    state: "true",
+                },
+                {
+                    title: "Running",
+                    state: "true",
+                },
+                {
+                    title: "Training & Gym",
+                    state: "true",
+                },
+                {
+                    title: "Basketball",
+                    state: "false",
+                },
+            ],
         }
     }
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 a {
     text-decoration: none;
     padding-right: 0.5rem;
