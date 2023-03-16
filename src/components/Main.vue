@@ -130,6 +130,23 @@
         </ul>
         <!-- fine brand list -->
 
+        <!-- color list -->
+        <div class="container d-flex gap-4 mt-2">
+            <div class="round">
+                <input type="checkbox" id="1" />
+                <label for="checkbox" class="bg-primary"></label>
+            </div>
+            <div class="round">
+                <input type="checkbox" id="2" />
+                <label for="checkbox" class="bg-danger"></label>
+            </div>
+            <div class="round">
+                <input type="checkbox" id="3" />
+                <label for="checkbox" class="bg-success"></label>
+            </div>
+        </div>
+        <!-- fine color list -->
+
         <!-- fine sidebar -->
 
 
