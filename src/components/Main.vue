@@ -1,60 +1,62 @@
 <template>
-    <section style="width:1080px">
-        <div class="container mt-5">
-            <!-- link del catalogo -->
-            <div class="my-primary">
-                <h3>Scarpe Uomo</h3>
-                <a href="">Home</a>
-                <a href="">Catalogo</a>
-                <a href="">Uomo</a>
+    <main>
+        <section>
+            <div class="">
+                <!-- link del catalogo -->
+                <div class="my-primary text-center">
+                    <h3>Scarpe Uomo</h3>
+                    <a href="">Home</a>
+                    <a href="">Catalogo</a>
+                    <a href="">Uomo</a>
+                </div>
             </div>
-            <!-- fine link catalogo -->
+        </section>
+
+        <!-- fine link catalogo -->
 
 
 
 
-            <!-- new:1 section -->
-            <div class="d-flex">
-                <div class="col sm-6">
-                    <div class="card w-100  my-primary">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <div class="flex-column">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Button</a>
-                                </div>
-                                <img src="https://picsum.photos/200" alt="">
+        <!-- new section -->
+        <div class="row">
+            <div class="col-7 card-fix">
+                <div class="card w-100  my-primary">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-column">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Button</a>
                             </div>
+                            <img src="https://picsum.photos/200" alt="">
                         </div>
                     </div>
                 </div>
-                <!-- fine new:1 -->
-
-                <!-- new:2 -->
-                <div class="col sm-6">
-                    <div class="card w-100 my-secondary">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <div class="flex-column">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Button</a>
-                                </div>
-                                <img src="https://picsum.photos/200" alt="">
+            </div>
+            <div class="col-5 card-fix">
+                <div class="card w-100  my-primary">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-column">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Button</a>
                             </div>
+                            <img src="https://picsum.photos/200" alt="">
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- fine new:2 -->
+        <!-- fine new section -->
 
         <!-- toolbar -->
+
         <div class="row">
             <div class="col">1</div>
             <div class="col">2</div>
@@ -64,97 +66,132 @@
         <!-- fine tooblar -->
 
         <!-- sidebar categories... -->
-        <div class="d-flex flex-column">
+        <div class="sidebar">
+            <div class="d-flex flex-column">
 
-            <!-- lista delle categorie -->
-            <ol class="list-group list-group-numbered">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                        <div class="fw-bold">
-                            <h4>CATEGORIES</h4>
+                <!-- lista delle categorie -->
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">
+                                <h4>CATEGORIES</h4>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Content for list item
-                    </div>
-                    <span class="badge bg-primary rounded-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Content for list item
-                    </div>
-                    <span class="badge bg-primary rounded-pill">14</span>
-                </li>
-            </ol>
-        </div>
-        <!-- fine lista categorie -->
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- fine lista categorie -->
 
-        <!-- price range bar -->
-        <div id="form-wrapper">
-            <form action="/p/quote.php" method="GET">
-                <h1 id="form-title">Seleziona il prezzo</h1>
-                <div id="debt-amount-slider">
-                    <input type="radio" name="debt-amount" id="1" value="1" required>
-                    <label for="1" data-debt-amount="< $25"></label>
-                    <input type="radio" name="debt-amount" id="2" value="2" required>
-                    <label for="2" data-debt-amount="$25-50"></label>
-                    <input type="radio" name="debt-amount" id="3" value="3" required>
-                    <label for="3" data-debt-amount="$50-100"></label>
-                    <input type="radio" name="debt-amount" id="4" value="4" required>
-                    <label for="4" data-debt-amount="$100-300"></label>
-                    <input type="radio" name="debt-amount" id="5" value="5" required>
-                    <label for="5" data-debt-amount="$300+ >"></label>
-                    <div id="debt-amount-pos"></div>
+            <!-- price range bar -->
+            <div id="form-wrapper">
+                <form action="/p/quote.php" method="GET">
+                    <h4 id="form-title">Seleziona il prezzo</h4>
+                    <div id="debt-amount-slider">
+                        <input type="radio" name="debt-amount" id="1" value="1" required>
+                        <label for="1" data-debt-amount="< $25"></label>
+                        <input type="radio" name="debt-amount" id="2" value="2" required>
+                        <label for="2" data-debt-amount="$25-50"></label>
+                        <input type="radio" name="debt-amount" id="3" value="3" required>
+                        <label for="3" data-debt-amount="$50-100"></label>
+                        <input type="radio" name="debt-amount" id="4" value="4" required>
+                        <label for="4" data-debt-amount="$100-300"></label>
+                        <input type="radio" name="debt-amount" id="5" value="5" required>
+                        <label for="5" data-debt-amount="$300+ >"></label>
+                        <div id="debt-amount-pos"></div>
+                    </div>
+                </form>
+                <button type="submit">Cerca Prodotti</button>
+            </div>
+
+            <!-- fine price range bar -->
+
+            <!-- brand list -->
+            <div>
+                <h4>BRAND</h4>
+            </div>
+            <ul class="list-group">
+                <li v-for="brand in brands" :key="brand.title" class="list-group-item">
+                    {{ brand.title }}
+                    <span>
+                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                    </span>
+                </li>
+            </ul>
+            <!-- fine brand list -->
+
+            <!-- color list -->
+            <section>
+            <h4>COLOR</h4>
+            <div class="container d-flex gap-4 mt-2">
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-primary"></label>
                 </div>
-            </form>
-            <button type="submit">Acquista Ora</button>
-        </div>
-
-        <!-- fine price range bar -->
-
-        <!-- brand list -->
-        <div>
-            <h4>BRAND</h4>
-        </div>
-        <ul class="list-group">
-            <li v-for="brand in brands" :key="brand.title" class="list-group-item">
-                {{ brand.title }}
-                <span>
-                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                </span>
-            </li>
-        </ul>
-        <!-- fine brand list -->
-
-        <!-- color list -->
-        <div class="container d-flex gap-4 mt-2">
-            <div class="round">
-                <input type="checkbox" id="1" />
-                <label for="checkbox" class="bg-primary"></label>
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-danger"></label>
+                </div>
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-success"></label>
+                </div>
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-success"></label>
+                </div>
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-success"></label>
+                </div>
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-success"></label>
+                </div>
+                <div class="round">
+                    <input type="checkbox" id="3" />
+                    <label for="checkbox" class="bg-success"></label>
+                </div>
             </div>
-            <div class="round">
-                <input type="checkbox" id="2" />
-                <label for="checkbox" class="bg-danger"></label>
-            </div>
-            <div class="round">
-                <input type="checkbox" id="3" />
-                <label for="checkbox" class="bg-success"></label>
-            </div>
-        </div>
-        <!-- fine color list -->
+        </section>
 
+            <!-- fine color list -->
+            <!-- inizio size bar -->
+            <section class="mt-5">
+                <H4>SIZE</H4>
+            <div class="container d-flex gap-4 ">
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-primary"></label>
+                </div>
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-primary"></label>
+                </div>
+                <div class="round">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="bg-primary"></label>
+                </div>
+            </div>
+        </section>
+            <!-- fine size bar -->
+        </div>
         <!-- fine sidebar -->
 
-
-
-
-
-
-    </section>
+    </main>
 </template>
 
 <script>
@@ -190,6 +227,14 @@ export default {
 a {
     text-decoration: none;
     padding-right: 0.5rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 400px;
+
 }
 
 .my-primary {

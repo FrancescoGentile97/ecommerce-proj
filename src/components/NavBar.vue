@@ -1,5 +1,5 @@
 <template>
-    <section class="position-sticky my-index mb-5">
+    <section class="temp-fix">
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img></a>
@@ -45,5 +45,8 @@ export default {
 <style scoped>
 .my-index{
     z-index: 9999;
+}
+.temp-fix{
+    margin-bottom: 15.5rem;
 }
 </style>
