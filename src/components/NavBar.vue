@@ -1,26 +1,33 @@
 <template>
     <section class="temp-fix">
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img></a>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container d-flex">
+            <div>
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#!"><i class="fas fa-plus-circle pe-2"></i>Post</a>
+                        <a class="nav-item mx-2" href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i>Alerts</a>
+                        <a class="nav-item mx-2" href="#!"><i class="fa-solid fa-bars me-2"></i>Categoria</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5><a href="#!">Progetto E-Commerce</a></h5>
+            </div>
+            <div>
+                <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"><i class="fa-solid fa-user"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#!"><i class="fas fa-heart pe-2"></i>Trips</a>
+                        <a class="nav-link mx-2" href="#!"><i class="fa-solid fa-heart"></i></a>
                     </li>
-                    <li class="nav-item ms-3">
-                        <a class="btn btn-black btn-rounded" href="#!">Sign in</a>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item mx-2" href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
                 </ul>
             </div>
