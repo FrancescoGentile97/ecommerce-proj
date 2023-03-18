@@ -58,10 +58,26 @@
         <!-- toolbar -->
 
         <div class="row">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
+            <div class="my-filter-bar my-border justify-content-between py-4 ">
+                Filter
+                <div class="border"></div>
+                <span><i class="fa-solid fa-rotate"></i></span>
+                
+            </div>
+            <div class="col d-flex justify-content-between my-border py-4">
+                Venduto da:
+                <span><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="col d-flex justify-content-between my-border py-4">
+                Trovati:12
+                <span><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="col d-flex justify-content-between my-border py-4">
+                <i class="fa-solid fa-table-cells"></i>
+                <i class="fa-solid fa-list"></i>
+                Compara:
+                <span class="badge bg-primary rounded-pill">3</span>
+            </div>
         </div>
         <!-- fine tooblar -->
 
@@ -135,58 +151,58 @@
 
             <!-- color list -->
             <section>
-            <h4>COLOR</h4>
-            <div class="container d-flex gap-4 mt-2">
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-primary"></label>
+                <h4>COLOR</h4>
+                <div class="container d-flex gap-4 mt-2">
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-primary"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-danger"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-success"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-success"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-success"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-success"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="3" />
+                        <label for="checkbox" class="bg-success"></label>
+                    </div>
                 </div>
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-danger"></label>
-                </div>
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-success"></label>
-                </div>
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-success"></label>
-                </div>
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-success"></label>
-                </div>
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-success"></label>
-                </div>
-                <div class="round">
-                    <input type="checkbox" id="3" />
-                    <label for="checkbox" class="bg-success"></label>
-                </div>
-            </div>
-        </section>
+            </section>
 
             <!-- fine color list -->
             <!-- inizio size bar -->
             <section class="mt-5">
                 <H4>SIZE</H4>
-            <div class="container d-flex gap-4 ">
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-primary"></label>
+                <div class="container d-flex gap-4 ">
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-primary"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-primary"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox" class="bg-primary"></label>
+                    </div>
                 </div>
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-primary"></label>
-                </div>
-                <div class="round">
-                    <input type="checkbox" id="checkbox" />
-                    <label for="checkbox" class="bg-primary"></label>
-                </div>
-            </div>
-        </section>
+            </section>
             <!-- fine size bar -->
         </div>
         <!-- fine sidebar -->
@@ -235,6 +251,17 @@ a {
     flex-shrink: 0;
     width: 400px;
 
+}
+
+.my-filter-bar{
+    display:flex;
+    width: 400px;
+}
+
+.my-border{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .my-primary {
