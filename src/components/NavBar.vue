@@ -1,6 +1,5 @@
 <template>
-    <section class="temp-fix">
-    <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top my-primary navbar-light">
         <div class="container d-flex">
             <div>
                 <ul class="navbar-nav ms-auto align-items-center">
@@ -33,7 +32,6 @@
             </div>
         </div>
     </nav>
-</section>
 </template>
 
 <script>
