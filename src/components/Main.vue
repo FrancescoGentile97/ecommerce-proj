@@ -93,7 +93,7 @@
     <!-- sidebar categories... -->
     <div class="container my-p-unset">
         <div class="sidebar">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column mb-3">
 
                 <!-- lista delle categorie -->
                 <ul class="list-group">
@@ -140,7 +140,7 @@
                 <h4>BRAND</h4>
             </div>
             <ul class="list-group">
-                <li v-for="brand in brands" :key="brand.title" class="list-group-item">
+                <li v-for="brand in brands" :key="brand.title" class="list-group-item d-flex justify-content-between align-items-start">
                     {{ brand.title }}
                     <span>
                         <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">

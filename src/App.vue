@@ -2,7 +2,8 @@
   <NavBar></NavBar>
 
   <Main></Main>
-  <!-- <Footer></Footer> -->
+  
+  <Footer></Footer>
 </template>
 
 <script>
