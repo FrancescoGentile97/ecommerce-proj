@@ -12,10 +12,7 @@
     </section>
 
     <!-- fine link catalogo -->
-
-
-
-
+    
     <!-- new section -->
     <div class="container my-negative-mt">
         <div class="row">
@@ -213,11 +210,11 @@
             <!-- fine side bar -->
 
             <!-- inizio main content -->
-            <div class="col-8">
+            <div class="col-8 my-main-content">
                 <div class="row">
                     <div v-for:="product, i  in productList" :key="i" class="col-3 mt-2">
-                        <div class="card">
-                            <div class="position-relative">
+                        <div class="card-img">
+                            <div class="position-relative card-body">
                                 <img v-bind:src="product.image" class="img-fluid">
                             </div>
                             <h5>{{ product.name }}</h5>
@@ -230,6 +227,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-2">
                     <ul class="pagination">
                         <li class="page-item">
@@ -250,6 +248,7 @@
                     </ul>
                 </nav>
             </div>
+      
 
             <!-- fine main content -->
         </div>
@@ -485,5 +484,9 @@ a {
 .card-fix {
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+.my-main-content img{
+    height: 250px!important;
 }
 </style>
