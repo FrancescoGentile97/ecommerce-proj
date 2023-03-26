@@ -2,6 +2,10 @@
 @use "@fortawesome/fontawesome-free/css/all.min.css";
 
 // COLOR PALETTE *********************************
+body {
+    background-color: #ccc;
+}
+
 .my-primary {
     background-color: #ff7514;
 }
@@ -9,34 +13,45 @@
 .my-secondary {
     background-color: #ff9d59;
 }
-.my-third{
+
+.my-third {
     background-color: #dc5b00;
 }
 
-.my-grey{
-    background-color: #222!important;
+.my-grey {
+    background-color: #222 !important;
 }
 
 // UTILITIES******************************
-.my-padding-top{
-    padding-top: 4rem!important;
-}
-.my-negative-mt{
-    margin-top: -2rem!important;
+.my-padding-top {
+    padding-top: 4rem !important;
 }
 
-.img-new-1{
+.my-negative-mt {
+    margin-top: -2rem !important;
+}
+
+.img-new-1 {
     width: 400px;
     height: 240px;
-    margin-left:3rem;
+    margin-left: 3rem;
 }
-.img-new-2{
+
+.img-new-2 {
     width: 200px;
     height: 240px;
 }
 
-.my-p-unset{
+.my-p-unset {
     padding: unset;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 400px;
+
 }
 
 
@@ -45,26 +60,24 @@
 nav a {
     color: black;
 }
-nav a:hover{
+
+nav a:hover {
     color: orange;
 }
-nav i:hover{
+
+nav i:hover {
     color: orange;
+}
+
+.my-nav-badge {
+    position: absolute;
+    top: 20%;
+    margin-left: 3px;
 }
 
 // price bar *****************
 $number-of-options: 5;
 
-// html,
-// body {
-//     width: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     font-family: 'Nunito', sans-serif;
-//     color: #000;
-//     user-select: none;
-// }
 
 #form-wrapper {
     width: 100%;
@@ -338,33 +351,36 @@ form {
 
 // buttons **********************************
 .myButton {
-	box-shadow: 3px 4px 0px 0px #f07c00;
-	background:linear-gradient(to bottom, #db5800 5%, #db770d 100%);
-	background-color:#db5800;
-	border-radius:24px;
-	border:1px solid #000000;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:9px 24px;
-	text-decoration:none;
-	text-shadow:0px 2px 0px #e67f00;
+    box-shadow: 3px 4px 0px 0px #f07c00;
+    background: linear-gradient(to bottom, #db5800 5%, #db770d 100%);
+    background-color: #db5800;
+    border-radius: 24px;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 9px 24px;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px #e67f00;
 }
+
 .myButton:hover {
-	background:linear-gradient(to bottom, #db770d 5%, #db5800 100%);
-	background-color:#db770d;
+    background: linear-gradient(to bottom, #db770d 5%, #db5800 100%);
+    background-color: #db770d;
     color: black;
 }
+
 .myButton:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
+
 // ******************************************************************
 
 // New Badge *******************************
-.my-badge{
+.my-badge {
     width: 50px;
     height: 30px;
     background-color: black;
@@ -372,9 +388,67 @@ form {
     margin-top: 10px;
 }
 
-.my-badge-new{
+.my-badge-new {
     position: absolute;
     top: 10%;
     left: 15%;
 }
+
 // **********************************************
+
+//  Footer **********************************
+footer {
+    background-color: #ff7514;
+}
+
+.credits a {
+    color: black;
+}
+
+.credits a:hover {
+    color: #ff9d59;
+}
+
+.credits i {
+    font-size: 2rem;
+}
+
+
+
+// ******************************************
+
+// COLOR LIST UTILITES *******************************
+
+.color-list-white {
+    background-color: whitesmoke;
+}
+
+.color-list-red {
+    background-color: red;
+}
+
+.color-list-blue {
+    background-color: blue;
+}
+
+.color-list-purple {
+    background-color: purple;
+}
+
+.color-list-yellow {
+    background-color: yellow;
+}
+
+.color-list-orange {
+    background-color: orange;
+}
+
+.color-list-black {
+    background-color: black;
+}
+
+.color-list-green {
+    background-color: green;
+}
+
+// ***************************************************

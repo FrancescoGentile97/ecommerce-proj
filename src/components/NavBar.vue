@@ -23,10 +23,8 @@
                         <a class="nav-link mx-2" href="#!"><i class="fa-solid fa-heart"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item mx-2" href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="nav-link mx-2" href="#!"><i class="fa-solid fa-cart-shopping"></i><span class="badge bg-primary my-nav-badge rounded-pill">2</span></a>
+                 
                     </li>
                 </ul>
             </div>

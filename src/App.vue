@@ -2,7 +2,7 @@
   <NavBar></NavBar>
 
   <Main></Main>
-  
+
   <Footer></Footer>
 </template>
 
